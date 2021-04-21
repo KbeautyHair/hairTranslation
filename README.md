@@ -15,13 +15,13 @@ Clone this repository:
 
 ```bash
 git clone https://github.com/KbeautyHair/KbeautyBaseline.git
-cd KbeautyBaseline/
+cd hairTranslation/
 ```
 
 Install the dependencies:
 ```bash
-conda create -n KbeautyBaseline python=3.6.7
-conda activate KbeautyBaseline
+conda create -n hairTranslation python=3.6.7
+conda activate hairTranslation
 ```
 * CUDA version 10.0
 ```bash
@@ -40,7 +40,7 @@ pip install pillow==7.0.0 scipy==1.2.1 tqdm==4.43.0 munch==2.5.0
 ## Datasets and pre-trained networks
 We provide links to download K-hairstyle dataset we used to train the baseline model and the corresponding pre-trained networks. The datasets and checkpoints of the pre-trained networks are required to be downloaded and stored in the `data` and `expr/checkpoints` directories, respectively.
 
-To download the K-hairstyle dataset, please visit this [dataset link](link) and for the pre-trained networks, visit this [checkpoint link](https://drive.google.com/file/d/1EYbJCUZBITAer2jscfguL3lNFZNMSaVy/view?usp=sharing), please.
+To download the K-hairstyle dataset, please visit this [dataset link](link) and for the pre-trained networks, visit this [checkpoint link](https://drive.google.com/file/d/1oPbVyJEShAEAwFKde1sZmse-Vbc2OG45/view?usp=sharing), please.
 
 ## Translating images
 After downloading the pre-trained networks, you can synthesize output images reflecting diverse hairstyles of reference images. The following commands will save generated images to the `expr/results` directory. 
@@ -63,7 +63,7 @@ python main.py --mode eval --img_size 512 --num_domains 2 --w_hpf 0 \
 ```
 
 ## Training networks
-To train the baseline model from scratch, run the following commands. Generated images and network checkpoints will be stored in the `expr/samples` and `expr/checkpoints` directories, respectively. Training takes about three days on a single Tesla V100 GPU. Please see [here](https://github.com/KbeautyHair/KbeautyBaseline/blob/master/main.py#L76-L122) for training arguments and a description of them.
+To train the baseline model from scratch, run the following commands. Generated images and network checkpoints will be stored in the `expr/samples` and `expr/checkpoints` directories, respectively. Training takes about three days on a single Tesla V100 GPU. Please see [here](https://github.com/KbeautyHair/hairTranslation/blob/master/main.py#L76-L122) for training arguments and a description of them.
 
 ```bash
 python main.py --mode train --img_size 512 --num_domains 2 --w_hpf 0 \
