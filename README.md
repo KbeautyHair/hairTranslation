@@ -14,7 +14,7 @@
 Clone this repository:
 
 ```bash
-git clone https://github.com/KbeautyHair/KbeautyBaseline.git
+git clone https://github.com/KbeautyHair/hairTranslation.git
 cd hairTranslation/
 ```
 
@@ -78,5 +78,4 @@ If you want to get more details of the original model Stargan v2, [this reposito
 The source code, pre-trained models of StarGAN v2 are available under [Creative Commons BY-NC 4.0](https://github.com/clovaai/stargan-v2/blob/master/LICENSE) license by NAVER Corporation. You can **use, copy, tranform and build upon** the material for **non-commercial purposes** as long as you give **appropriate credit** by citing our paper, and indicate if changes were made. 
 
 ## Contact
-For business inquiries, please contact yuryueng@gmail.com or valther.ppk@gmail.com.<br/>	
-For technical and other inquires, please contact codusl8@korea.ac.kr or specia1ktu@gmail.com.
+codusl8@korea.ac.kr or specia1ktu@gmail.com.
